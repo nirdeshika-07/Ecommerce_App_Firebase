@@ -4,7 +4,7 @@ import '../../constants/app_pallete.dart';
 
 class AppTextformFieldTheme{
   AppTextformFieldTheme._();
-  static OutlineInputBorder _border([Color color = AppPallete.lightthemeBorderColor, double width = 1.0]) => OutlineInputBorder(
+  static OutlineInputBorder _border(Color color, [double width = 1.0]) => OutlineInputBorder(
       borderSide: BorderSide(
           color: color,
           width: width
@@ -22,7 +22,7 @@ class AppTextformFieldTheme{
     floatingLabelStyle: const TextStyle().copyWith(color: Color.fromRGBO(0, 0, 0, 0.8)),
     border: _border(Colors.grey),
     enabledBorder: _border(Colors.grey),
-    focusedBorder: _border(),
+    focusedBorder: _border(AppPallete.borderPrimary),
     errorBorder: _border(Colors.red),
     focusedErrorBorder: _border(Colors.deepOrange, 2.0),
   );
@@ -36,7 +36,7 @@ class AppTextformFieldTheme{
     floatingLabelStyle: const TextStyle().copyWith(color: Color.fromRGBO(255, 255, 255, 0.8)),
     border: _border(Colors.grey),
     enabledBorder: _border(Colors.grey),
-    focusedBorder: _border(AppPallete.darkthemeBorderColor),
+    focusedBorder: _border(AppPallete.borderSecondary),
     errorBorder: _border(Colors.red),
     focusedErrorBorder: _border(Colors.deepOrange, 2.0),
   );
