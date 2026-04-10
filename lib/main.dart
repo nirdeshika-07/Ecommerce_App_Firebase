@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/utils/themes/theme.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,10 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
+      themeMode: ThemeMode.system,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }

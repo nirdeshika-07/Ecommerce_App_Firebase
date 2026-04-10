@@ -65,7 +65,6 @@ flutter:
   
 #---------- Local Assets -------------#
   assets:
-    - assets/fonts/
     - assets/icons/brands/
     - assets/images/
     - assets/logos/
@@ -124,7 +123,13 @@ flutter:
         - asset: assets/fonts/poppins_semibold_italic.ttf
           weight: 600
           style: italic
-
+    - family: Coolvetica
+      fonts:
+        - asset: assets/fonts/coolvetica_regular.otf
+          weight: 400
+        - asset: assets/fonts/coolvetica_regular_italic.otf
+          weight: 400
+          style: italic
 
   #---------- End of fonts Assets -------------#
 
